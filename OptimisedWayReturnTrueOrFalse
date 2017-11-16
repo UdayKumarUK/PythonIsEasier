@@ -1,0 +1,25 @@
+# Easy way to Return
+
+def evenOrOdd(element):
+    if element%2==0:
+        return True
+    else:
+        return False
+ 
+#Second Way
+def evenOrOdd(element):
+    if element%2==0:
+        return True
+    return False
+    
+    
+ # Third Way
+ def evenOrOdd(element):
+    return True if element%2==0 else False
+    
+ # Fourth Way
+ def evenOrOdd(element):
+    isEven = False
+    if element%2==0:
+        isEven=True
+    return isEven
