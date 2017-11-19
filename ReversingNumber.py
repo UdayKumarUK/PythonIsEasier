@@ -12,6 +12,11 @@ while(int(number) > 0):
     number=int(number)/10
 print('Number After reversing : ',rev_num)
 
-#Other way to Returning reverse of a Number. Below code is applicable only for positive numbers as of now
-num_str = str(number)
-print(num_str[::-1])
+#Other way to Returning reverse of a Number.
+isNegative= False
+if number<0:
+    isNegative=True    
+    num_str = str(number)[1:]
+else:
+    num_str=str(number)
+print('-'+num_str[::-1] if isNegative else num_str[::-1])
